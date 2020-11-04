@@ -122,7 +122,7 @@ app.post('/api/createProfile', jsonParser, function (req, res) {
         }
     )
 });
-
+ 
 app.put('/api/userupdate', jsonParser, function (req, res) {
 
     User.findByIdAndUpdate(req.body._id,
